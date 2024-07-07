@@ -23,6 +23,7 @@ public class Demo extends HttpServlet {
 
     }
 
+//    resources clear krann use we -- server ek stop krddi destroy method coll wenawa
     @Override
     public void destroy() {
         System.out.println("destroy method is coll");
