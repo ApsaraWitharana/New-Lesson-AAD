@@ -8,7 +8,7 @@ import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
 //extenshion mapping ekk extenshion wenne exten ekk widiyt
-@WebServlet(urlPatterns = "*.text") //mehem mapping ekk den eke agan extenshion ekk ekk denwanm ek=>
+@WebServlet(urlPatterns = "/customer") //mehem mapping ekk den eke agan extenshion ekk ekk denwanm ek=>
 //url ek map krne kohomd kiyn ek mapping ekk kiynne//
 public class Customer extends HttpServlet {
 
@@ -36,4 +36,7 @@ public class Customer extends HttpServlet {
 //@WebServlet(urlPatterns = "") 3.Empty string mapping
 //@WebServlet(urlPatterns = "/*") 4.while card mapping ekk witharayi( Path info:/hii) value ekk enne --java servers wl ** dann be
 //@WebServlet(urlPatterns = "/**") ant mapping java server wl ba spring wl puluwan
-//@WebServlet(urlPatterns = "/") 5.Defolte Mapping ->
+//@WebServlet(urlPatterns = "/") 5.Default Mapping ->
+
+// Query String=>url ekkin data ekk ywnn puluwn widiyk --search result ynne me widiyta chrom eke
+// http://localhost:8080/myContext/customer?name=sachini ===>>   Query String:name=sachini
